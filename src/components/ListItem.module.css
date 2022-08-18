@@ -1,0 +1,62 @@
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--gray-500);
+    padding: 1rem;
+
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px; 
+
+    margin-bottom: 0.75rem;
+
+    gap: 1rem;
+
+}
+
+.CheckedItem {
+    text-decoration-line: line-through;
+}
+
+.NotCheckedItem {
+    color: var(--gray-100);
+    text-decoration-line: none;
+}
+
+.listItem button {
+    background: transparent;
+    border: none;
+    line-height: 0;
+    padding: 2px;
+    transition: .2s;
+}
+
+.listItem .CheckedCircle {
+    width: 24px;
+    height: 24px;
+}
+
+.listItem button svg.CheckedCircle polyline {
+    stroke:#F2F2F2;
+}
+
+
+.listItem button .CheckedCircle:hover {
+    filter: brightness(1.2);
+}
+
+.listItem button .NotCheckedCircle:hover circle {
+    fill: #1e709f29;
+}
+
+
+.listItem button.trashIcon {
+    color: var(--gray-300);
+    border-radius: 4px;
+}
+
+.listItem button.trashIcon:hover {
+    color: var(--red);
+    background-color: var(--gray-300);
+}

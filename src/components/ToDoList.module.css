@@ -1,0 +1,90 @@
+.toDoList {
+    max-width: 45rem;
+    margin: 2rem auto;
+    transform: translateY(-3.9rem);
+}
+
+.newTask {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 3.25rem;
+}
+
+.newTask input {
+    padding: 1rem;
+    background: var(--gray-600);
+    border: 1px solid #0D0D0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 39.875rem;
+    height: 3.375rem;
+    outline: none;
+}
+
+.newTask input:focus {
+    border: 1px solid #5E60CE;
+    border-radius: 8px;
+    color: var(--gray-100)
+}
+
+.newTask button {
+    border-radius: 8px;
+    background:var(--blue-dark);
+    color: var(--gray-100);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    transition: .2s;
+}
+
+.newTask button:hover {
+    background: var(--blue);
+}
+
+.progressInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.progressInfo p {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.progressInfo .createdProgress p {
+    color: var(--blue)
+}
+
+.progressInfo .doneProgress p {
+    color: var(--purple-dark)
+}
+
+.progressInfo span {
+    color: var(--gray-200);
+    background:var(--gray-400);
+    padding: 0.125rem 0.5rem;;
+    margin-left: 0.625rem;
+    border-radius: 999px;
+}
+
+.emptyList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+    gap: 1rem;
+}
+
+.emptyList .text {
+    line-height: 140%;
+    text-align: center;
+}
+
+.emptyList .text p:nth-child(1) {
+    font-weight: 700;
+}
